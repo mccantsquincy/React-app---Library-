@@ -821,6 +821,24 @@ select {
     display: none;
   }
 
+  header {
+    height: 124vh;
+  }
+
+  .header__row {
+    max-width: 80%;
+    margin-top: 68px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+
+  }
+
   .highlight {
     width: 100%;
   }
