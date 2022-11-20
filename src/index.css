@@ -272,6 +272,10 @@ header {
   padding: 24px 0;
 }
 
+.header__row {
+  margin: 60px 0 40px 0;
+  text-align: center;}
+
 .row {
   width: 100%;
   max-width: 1200px;
@@ -408,6 +412,7 @@ FEATURES
 .book__title--skeleton {
   height: 21px;
   width: 100%;
+  max-width: 250px;
 }
 
 .book__rating--skeleton {

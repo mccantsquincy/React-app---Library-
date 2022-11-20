@@ -5,26 +5,16 @@ import Price from "../components/ui/Price";
 import Rating from "../components/ui/Rating";
 import React, { useEffect, useState } from "react";
 
-const BookInfo = ({ books }) => {
+const BookInfo = ({ books, addToCart, cart }) => {
   const { id } = useParams();
   const book = books.find((book) => +book.id === +id); //=== is evaluate data and type of data so adding + infront of "book.id" & "id" will convert it to number
-  const [cart, setCart] = useState([]);
-
-  function addToCart(book) {
-    setCart([...cart, book])
-  }
-
-  useEffect(() => {
-     console.log(cart)
-  }, [cart])
-
+  
   function addBookToCart(book) {
     addToCart(book);
   }
 
   function bookExistsOnCart() {
-    return cart.find((book )=> book.id === +id);
-
+    return cart.find(book => book.id === +id);
   }
 
   return (
