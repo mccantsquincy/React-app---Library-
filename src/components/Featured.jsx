@@ -3,10 +3,10 @@ import Book from './ui/Book'
 import { books } from '../data'
 
 function Featured() {
-    console.log() 
-    function getFiveStarBooks() {
+    // console.log() 
+    // function getFiveStarBooks() {
        
-    }
+    // }
   return (
     <section id="features">
       <div className="container">
